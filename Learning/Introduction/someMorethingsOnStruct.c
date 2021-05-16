@@ -18,3 +18,10 @@ struct user{
     char dept[25];
     char add[50];
 };
+
+//making the cards
+#include <stdio.h>
+int main(){
+    struct cards deck[52] = {{0,1,2},{3,2,1}};
+    printf("%d", deck[1].shape);
+}
