@@ -19,5 +19,5 @@ int main(){
     int n ; 
     cout<<"Enter n to get e^n";
     cin>> n;
-    cout<< taylor(n,10);
+    cout<< taylor(n,10000);
 }
