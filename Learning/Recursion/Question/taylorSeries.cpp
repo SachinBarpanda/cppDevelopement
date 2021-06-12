@@ -2,9 +2,9 @@
 //To do this we have to use STATIC VARIABLE which will not change at the time of calling 
 #include <iostream>
 using namespace std;
-int taylor(int x, int n){
-    static int p=1,f=1;
-    int result;
+double taylor(int x, int n){
+    static double p=1,f=1;
+    double result;
     if(n==0){
         return 1;
     }else{
@@ -17,6 +17,7 @@ int taylor(int x, int n){
 
 int main(){
     int n ; 
+    cout<<"Enter n to get e^n";
     cin>> n;
-    cout<< taylor(n,n);
+    cout<< taylor(n,10);
 }
