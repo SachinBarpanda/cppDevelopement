@@ -1,23 +1,24 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
 int main(){
-    int n, binary, prev = 0 ;
-    int next = 0; 
-    int a , b;
+    int n, binary, prev = 0 ; 
+    int a , b=0;
     cin >> n;
     int temp = n ;
-
-    while(temp> 0 ){
+    int run = log2(n);
+    do{
         binary = temp % 2 ;
         prev = prev * 10 + binary;
         temp /= 2;
-    }
+    }while(temp > 0 );
 
-    while(n > 0){
+    while(run>=0){
         //reverse
-        a = n % 10;
+        a = prev % 10;
         b = b * 10 + a;
-        n /= 10;
+        prev /= 10;
+        run--;
     }
     cout << b;
 }
