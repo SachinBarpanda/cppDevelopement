@@ -7,12 +7,13 @@ int main(){
     cin >> n;
     int temp = n ;
     int run = log2(n);
-    do{
+    int run1 = log2(n);
+    while(run1>=0 ){
         binary = temp % 2 ;
         prev = prev * 10 + binary;
         temp /= 2;
-    }while(temp > 0 );
-
+        run1--;
+    }
     while(run>=0){
         //reverse
         a = prev % 10;
