@@ -1,4 +1,3 @@
-if(n==1){
-            //     y+=1;
-            //     break;
-            // }
+    // for(int i = 0 ; i < N ; i++){
+    //     cout << arrInd[i];
+    // }

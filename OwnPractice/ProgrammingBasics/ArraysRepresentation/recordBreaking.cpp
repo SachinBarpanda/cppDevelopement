@@ -27,12 +27,8 @@ int main(){
                 }
             }
         }
-
         
-        
-
-
-    cout <<"Case #"<<x<<": "<<y<<endl;
+        cout <<"Case #"<<x<<": "<<y<<endl;
         t--;
     }
     
