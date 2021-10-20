@@ -8,12 +8,15 @@ int main(){
         cin >> arr[i];
     }
 
-    cout << "sums are : ";
+    cout << "MAX sum is : ";
+    int maxSum = INT_MIN;
     for(int i = 0 ; i < n ; i++){
         int sum = 0;
         for(int j = i ; j < n ; j++){
             sum += arr[j];
-            cout << sum << endl;
+            maxSum = max(maxSum, sum);
+            // cout << sum << endl;
         }   
     }
+    cout << maxSum;
 }
