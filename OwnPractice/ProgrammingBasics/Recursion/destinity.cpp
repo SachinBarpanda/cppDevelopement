@@ -15,5 +15,5 @@ int destiny(int s ,int e){
     return count ;
 }
 int main(){
-    cout<<destiny(0,3)<<endl;
+    cout<<destiny(3,3)<<endl;
 }
