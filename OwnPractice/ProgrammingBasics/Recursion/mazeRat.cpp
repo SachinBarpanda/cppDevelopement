@@ -39,11 +39,7 @@ int main(){
             cin >> arr[i][j];
         }
     }
-// 1 0 1 0 1
-// 1 1 1 1 1
-// 0 1 0 1 0
-// 0 0 0 1 1
-// 0 1 1 0 1
+
     int** solarr = new int*[n];
     for(int i =0 ; i < n; i++){
         solarr[i] = new int[n];
@@ -57,3 +53,8 @@ int main(){
         cout <<endl;
     }
 }
+// 1 0 1 0 1
+// 1 1 1 1 1
+// 0 1 0 1 0
+// 0 0 0 1 1
+// 0 1 1 0 1
