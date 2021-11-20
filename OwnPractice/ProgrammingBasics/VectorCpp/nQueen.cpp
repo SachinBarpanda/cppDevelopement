@@ -1,5 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
+void print(int** arr,int n){
+
+    cout << "Iteration : "<<endl;
+    for(int i = 0 ; i < n ; i++){
+        for(int j = 0 ; j < n ; j++){
+            cout << arr[i][j];
+        }
+        cout<<endl;
+    }
+}
 bool isSafe(int** arr, int x,int y,int n ){
     
     for(int i = 0 ; i < n ; i++){
@@ -38,6 +48,7 @@ bool nqueen(int** arr , int n , int x){
     for(int y = 0 ; y < n ; y++){
         if(isSafe(arr,x,y,n)){
             arr[x][y] = 0;
+            print(arr,n);
             if(nqueen(arr, n, x+1)){
                 return true;
             }else{
@@ -47,6 +58,7 @@ bool nqueen(int** arr , int n , int x){
     }
     return false;
 } 
+
 int main(){
     int n ;
     cin >> n;
