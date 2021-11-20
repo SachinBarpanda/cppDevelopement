@@ -18,27 +18,31 @@ void merge(int arr[], int right , int mid , int left){
     int j = 0;
     int k = right;
     while(i < x && j < y){
-        if(arr[j] > arr[i]){
+        if(arr2[j] > arr1[i]){
             arr[k] = arr1[i];
             i++;
         }else{
-            arr[k] = arr1[j];
+            arr[k] = arr2[j];
             j++;
         }
         k++;
     }
     
     while(i<x){
-        arr[k] = arr[i];
+        arr[k] = arr1[i];
         i++;k++;
     }
     
     while(j< y){
-        arr[k] = arr[j];
+        arr[k] = arr2[j];
         k++;j++;
     }
 
-    
+    cout << "Iteration CHecking : ";
+    for(int i = 0 ; i < 8 ; i++){
+        cout<< arr[i] << " ";    
+    }
+    cout << endl;
 }
 
 
