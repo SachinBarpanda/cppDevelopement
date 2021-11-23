@@ -20,4 +20,18 @@ int main(){
         cout << v1 << " ";
     }
 
+    v.pop_back();
+    for(auto v1 : v){
+        cout << v1 << " ";
+    }
+    cout << endl;
+    vector<int> v2(3,5) ;
+    swap(v,v2);
+    for(auto v1:v){
+        cout << v1 <<  " ";
+        
+    }
+    cout << endl;
+
+
 }
