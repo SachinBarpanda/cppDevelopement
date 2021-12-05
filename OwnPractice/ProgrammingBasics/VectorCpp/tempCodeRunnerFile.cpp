@@ -1,3 +1,1 @@
-n; i++){
-    //     cout << count[i] << " ";
-    // }
+int n = sizeof(arr)/sizeof(arr[0]);
